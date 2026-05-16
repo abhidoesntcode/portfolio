@@ -561,6 +561,266 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* =====================
+   Experience Section
+   ===================== */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exp-card {
+    padding: 2.5rem;
+}
+
+.exp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.exp-logo-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-blue);
+    flex-shrink: 0;
+}
+
+.exp-logo-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.exp-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+.exp-meta h3 {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+}
+
+.exp-company {
+    display: block;
+    font-size: 1rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.exp-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.exp-duration svg {
+    width: 14px;
+    height: 14px;
+}
+
+.exp-badge {
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--accent-blue);
+    padding: 0.3rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    align-self: flex-start;
+}
+
+.exp-desc {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.exp-tasks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.exp-tasks li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.exp-tasks li svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent-blue);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.exp-tasks li strong {
+    color: var(--text-primary);
+}
+
+.exp-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.exp-tech-tags span {
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: var(--accent-light);
+    padding: 0.3rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.exp-tech-tags span:hover {
+    background: rgba(59, 130, 246, 0.18);
+    border-color: var(--accent-blue);
+    color: var(--white);
+}
+
+/* =====================
+   Forage Project Card
+   ===================== */
+.forage-card {
+    border-color: rgba(59, 130, 246, 0.25);
+    background: rgba(59, 130, 246, 0.04);
+}
+
+.forage-card:hover {
+    border-color: rgba(59, 130, 246, 0.55);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.12);
+}
+
+/* =====================
+   Certifications Section
+   ===================== */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 2rem 2.5rem;
+}
+
+.cert-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-blue);
+    flex-shrink: 0;
+}
+
+.cert-icon-wrap svg {
+    width: 24px;
+    height: 24px;
+}
+
+.cert-info {
+    flex: 1;
+}
+
+.cert-issuer {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--accent-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+}
+
+.cert-info h3 {
+    font-size: 1.15rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.cert-date {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.9rem;
+}
+
+.cert-date svg {
+    width: 13px;
+    height: 13px;
+}
+
+.cert-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.cert-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--accent-light);
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cert-btn:hover {
+    background: rgba(59, 130, 246, 0.22);
+    border-color: var(--accent-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.cert-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
 /* Responsiveness */
 @media (max-width: 992px) {
     .hero h1 { font-size: 4rem; }
@@ -573,4 +833,13 @@ footer p {
     .nav-links, .nav-cta { display: none; }
     .section-header h2 { font-size: 2.2rem; }
     .contact-card h2 { font-size: 2.5rem; }
+
+    /* Experience responsive */
+    .exp-header { flex-direction: column; }
+    .exp-badge { align-self: flex-start; }
+    .exp-card { padding: 1.5rem; }
+
+    /* Certifications responsive */
+    .cert-grid { grid-template-columns: 1fr; }
+    .cert-card { flex-direction: column; padding: 1.5rem; }
 }
