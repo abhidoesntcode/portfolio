@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 5. Smooth Scrolling
-    const links = document.querySelectorAll('.nav-links a, .nav-cta a, .hero-btns a');
+    const links = document.querySelectorAll('.nav-links a, .nav-cta a, .hero-btns a, .mobile-nav-links a, .mobile-nav-cta a');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
@@ -177,4 +177,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-links a, .mobile-nav-cta a');
+
+    if (mobileMenuBtn && mobileMenuClose && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    }
 });
